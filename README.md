@@ -1,5 +1,7 @@
 # Bikemanager
 
+This is my first Angular 2 project with Material Design, just trying to get an understanding of everything!
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19-3.
 
 ## Development server
