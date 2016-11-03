@@ -1,3 +1,25 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+    <button class="app-icon-button" (click)="start.open()">
+      <i class="material-icons app-toolbar-menu">menu</i>
+    </button>
+
+    Angular Material2 Example App
+
+    <span class="app-toolbar-filler"></span>
+    <button class="app-icon-button"><i class="material-icons app-toolbar-menu">account_circle</i></button>
+</md-toolbar>
+<md-sidenav-layout>
+    <md-sidenav #start mode="side" class="app-sidenav" (open)="closeStartButton.focus()">
+      Start Sidenav.
+      <br>
+      <button md-button #closeStartButton (click)="start.close()">Close</button>
+    </md-sidenav>
+
+	<div class="app-content">
+	    My regular content. This will be moved into the proper DOM at runtime.
+	    <button md-button (click)="start.open()">Open start sidenav</button>
+		<h1>
+		  {{title}}
+		</h1>
+	</div>
+</md-sidenav-layout>
